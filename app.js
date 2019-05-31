@@ -17,6 +17,7 @@ var profileRouter = require('./routes/profile');
 
 var app = express();
 require('./configs/facebook.strategy');
+require('./configs/steam.strategy');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
