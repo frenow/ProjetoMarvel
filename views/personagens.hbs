@@ -17,9 +17,9 @@
   <h1>Ola, {{usuario.displayName}}</h1>
   <h2>ID: {{usuario.id}}</h2>
   <br>
-	<ul>
+	<ul class="list-group">
 	{{#each lista}}
-		<li><a href="/personagem/{{this.id}}">Nome: {{this.name}}</a> 
+		<li class="list-group-item"><a href="/personagem/{{this.id}}">Nome: {{this.name}}</a> 
 		<p>Descrição: {{this.description}}</li>
 	{{/each}}
 	</ul>
@@ -32,6 +32,7 @@
           </ul>
     </nav>
 
-  <a href="/logout">(Logout)</a>
+  <a href="/logout" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-log-out"></span> Log out</a>
   </body>
 </html>

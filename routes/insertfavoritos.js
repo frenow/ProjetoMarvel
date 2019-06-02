@@ -23,7 +23,7 @@ router.get('/', require('connect-ensure-login').ensureLoggedIn(),
 router.get('/:id', require('connect-ensure-login').ensureLoggedIn(),
 (req, res) => {    
     Favoritos.findOneAndRemove({ id_usuario: req.user.id, id_personagem: req.params.id }).then(function (favoritos) {
-        res.send('Personagem favorito removido.');
+        res.redirect('/insertfavoritos');
     })
 
 });
@@ -40,7 +40,7 @@ router.post('/', require('connect-ensure-login').ensureLoggedIn(),
         if (err) {
             res.json({ success: false, message: 'falhaz' + err });
         } else {
-            res.json({ success: true, message: 'Success', favorito });
+            res.redirect('/insertfavoritos');
         }
     });    
 

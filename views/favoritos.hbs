@@ -52,8 +52,8 @@
   <br><br>
 	<ul>
 	{{#each lista_favoritos}}
-		<li><a href="/personagem/{{this.id_personagem}}">Id: {{this.id_personagem}}</a> 
-		<p>Nome: {{this.nome_personagem}}
+		<li><a href="/personagem/{{this.id_personagem}}">Id: {{this.id_personagem}} <p> Nome: {{this.nome_personagem}}</a> 
+		
        <a href='/insertfavoritos/{{this.id_personagem}}' class="btn btn-info btn-lg">
           <span class="glyphicon glyphicon-remove"></span> Remover
         </a>
