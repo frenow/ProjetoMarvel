@@ -13,7 +13,7 @@
     "express-session": "^1.16.1",
     "hbs": "~4.0.4",
     "http-errors": "~1.6.3",
-    "knex": "^0.17.0-next3",
+    "knex": "^2.4.0",
     "mongodb": "^3.2.5",
     "mongoose": "^5.5.9",
     "morgan": "~1.9.1",
